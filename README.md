@@ -23,11 +23,11 @@ The neurons in the hidden layer will pick up different combinations on input val
 
 The error in our prediction can be evaluated using the cost function; our goal is to minimise the cost function. The cost function is given below.
 
-<img src = 'Screen3.png' width='350'>
+<img src = 'Screen3.png' width='250'>
 
 The cost function value C gets fed back into the neural network and the corresponding weights are updated. This process is called "Backwards Propagation".
 
-<img src = 'Screen4.png' width='350'>
+<img src = 'Screen4.png' width='300'>
 
 ```
 Epoch 1/100
