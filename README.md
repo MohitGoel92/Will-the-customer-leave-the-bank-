@@ -10,7 +10,7 @@ We will be using an "Artificial Neural Network" to complete this business task.
 
 An Artificial Neural Network is a "Deep Learning" model that can be used for regression and classification. We create an artificial structure where we have nodes that represent neurons.
 
-
+<img src = 'Screen1.png' width='700'>
 
 
 
