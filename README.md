@@ -29,6 +29,20 @@ The cost function value C gets fed back into the neural network and the correspo
 
 <img src = 'Screen4.png' width='300'>
 
+**Back propagation**
+
+An advanced algorithm which allows us to adjust all the weights at the same time. We can do this as the algorithm knows which part of the error each of the weights in the neural network is responsible for.
+
+**Stochastic Gradient Descent**
+
+In batch gradient descent we adjust the weights after we have run all the rows in our neural network. In the stochastic gradient descent  method, we run each row at a time and adjust the weights each time. This helps us avoid the problem of local minimums as the fluctuations are larger as we're running the method per line each time. This method is faster as it is a lighter algorithm as we do not load all the data at once into the memory and then run the data. The advantage of batch gradient descent is that it is a deterministic algorithm rather than a random alorithm. 
+
+The mini batch gradient descent method is midway between the two, where random batches of rows are run.
+
+**Training the ANN with Stochastic Gradient Descent**
+
+
+
 ```
 Epoch 1/100
 8000/8000 [==============================] - 1s 179us/step - loss: 0.4801 - accuracy: 0.7960
