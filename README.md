@@ -8,10 +8,13 @@ We will be using an "Artificial Neural Network" to complete this business task.
 
 ## Artificial Neural Networks
 
-An Artificial Neural Network is a "Deep Learning" model that can be used for regression and classification. We create an artificial structure where we have nodes that represent neurons.
+An Artificial Neural Network (ANN) is a "Deep Learning" model that can be used for regression and classification. We create an artificial structure where we have nodes that represent neurons. The image below shows a neuron.
 
 <img src = 'Screen1.png' width='700'>
 
+Neurons by themselves are not of much use but when you have many neurons together, they work together to produce magic. The digram below shows an ANN with one hidden layer.
+
+<img src = 'Screen2.png' width='700'>
 
 
 ```
@@ -30,3 +33,4 @@ Epoch 100/100
 ### References
 
 Neuron diagram:  https://askabiologist.asu.edu/neuron-anatomy
+ANN digram: https://www.udemy.com/course/machinelearning/
