@@ -19,6 +19,13 @@ Neurons by themselves are not of much use but when you have many neurons togethe
 Each neuron independently in the hidden layer will not be able to predict the outcome y, but together, combining will be able to produce the output layer. If trained properly, they will do an accurate job.
 The neurons in the hidden layer will pick up different combinations on input values (independent variables) and different weights. They will work together to produce the final output y.
 
+**Cost function**
+
+The error in our prediction can be evaluated using the cost function; our goal is to minimise the cost function. The cost function is given below.
+
+
+The cost function value C gets fed back into the neural network and the corresponding weights are updated. This process is called "Backwards Propagation".
+
 ```
 Epoch 1/100
 8000/8000 [==============================] - 1s 179us/step - loss: 0.4801 - accuracy: 0.7960
