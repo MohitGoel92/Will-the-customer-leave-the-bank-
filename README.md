@@ -16,7 +16,7 @@ Neurons by themselves are not of much use but when you have many neurons togethe
 
 <img src = 'Screen2.png' width='700'>
 
-Each neuron independently in the hidden layer will not be able to predict the outcome y, but, combining will be able to produce the output layer. If trained properly, they will do an accurate job.
+Each neuron independently in the hidden layer will not be able to predict the outcome y. However, combining them together will enable us to produce the output layer (output value y). If trained properly, they will do an accurate job.
 The neurons in the hidden layer will pick up different combinations on input values (independent variables) and different weights. They will work together to produce the final output y.
 
 **Cost function**
