@@ -8,6 +8,11 @@ We will be using an "Artificial Neural Network" to complete this business task.
 
 ## Artificial Neural Networks
 
+An Artificial Neural Network is a "Deep Learning" model that can be used for regression and classification. We create an artificial structure where we have nodes that represent neurons.
+
+
+
+
 
 ```
 Epoch 1/100
@@ -22,3 +27,6 @@ Epoch 99/100
 Epoch 100/100
 8000/8000 [==============================] - 1s 152us/step - loss: 0.4008 - accuracy: 0.8356
 ```
+### References
+
+Neuron diagram:  https://askabiologist.asu.edu/neuron-anatomy
