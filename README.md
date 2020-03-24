@@ -8,3 +8,17 @@ We will be using an "Artificial Neural Network" to complete this business task.
 
 ## Artificial Neural Networks
 
+
+```
+Epoch 1/100
+8000/8000 [==============================] - 1s 179us/step - loss: 0.4801 - accuracy: 0.7960
+Epoch 2/100
+8000/8000 [==============================] - 1s 149us/step - loss: 0.4252 - accuracy: 0.7960
+
+...
+
+Epoch 99/100
+8000/8000 [==============================] - 1s 153us/step - loss: 0.4007 - accuracy: 0.8354
+Epoch 100/100
+8000/8000 [==============================] - 1s 152us/step - loss: 0.4008 - accuracy: 0.8356
+```
