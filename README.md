@@ -39,9 +39,17 @@ In batch gradient descent we adjust the weights after we have run all the rows i
 
 The mini batch gradient descent method is midway between the two, where random batches of rows are run.
 
-**Training the ANN with Stochastic Gradient Descent**
+**Steps in training the ANN with Stochastic Gradient Descent**
 
+- **Step 1:** Randomly initialise the weights to small numbers that are close to 0 (but not 0).
+- **Step 2:** Input the first observation of your dataset in the input layer, each feature in one input node.
+- **Step 3:** Forward-Propagation: From left to right, the neurons are activated in a way that the impact of each neuron's activation is limited by the weights. Propagate the activations until getting the predicted result y.
+- **Step 4:** Compare the predicted result to the actual result; measure the gereated error.
+- **Step 5:** Back-Propagation: From right to left, the error is back-propagated. Update the weights according to how much they're responsible for the error. The learning rate decides by how much we update the weights. 
+- **Step 6:** Repeat steps 1 to 5 and update the weights after each observation, or repeat steps 1 to 5 but update the weights only after a batch of observations.
+- **Step 7:** When the whole training set passed through the ANN, that makes an epoch. We decide how many epochs to perform.
 
+The code below shows the output of when the epochs are running. As the epochs run, we observe the accuracy increasing and loss decreasing.
 
 ```
 Epoch 1/100
