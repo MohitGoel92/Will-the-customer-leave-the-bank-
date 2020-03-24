@@ -25,7 +25,7 @@ The error in our prediction can be evaluated using the cost function; our goal i
 
 <img src = 'Screen3.png' width='250'>
 
-The cost function value C gets fed back into the neural network and the corresponding weights are updated. This process is called "Backwards Propagation".
+The cost function value C gets fed back into the neural network and the corresponding weights are updated. This process is called "Backwards Propagation". The cost function illustrated by the parabola below, seeks the minimum value of the cost function which is the global minimum.
 
 <img src = 'Screen4.png' width='300'>
 
