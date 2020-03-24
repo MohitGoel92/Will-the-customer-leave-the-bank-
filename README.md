@@ -17,7 +17,7 @@ Neurons by themselves are not of much use but when you have many neurons togethe
 <img src = 'Screen2.png' width='700'>
 
 Each neuron independently in the hidden layer will not be able to predict the outcome y. However, combining them together will enable us to produce the output layer (output value y). If trained properly, they will do an accurate job.
-The neurons in the hidden layer will pick up different combinations on input values (independent variables) and different weights. They will work together to produce the final output y.
+The neurons in the hidden layer will pick up different combinations of input values (independent variables) and different weights. They will work together to produce the final output y.
 
 **Cost function**
 
@@ -35,21 +35,27 @@ An advanced algorithm which allows us to adjust all the weights at the same time
 
 **Stochastic Gradient Descent**
 
-In batch gradient descent we adjust the weights after we have run all the rows in our neural network. In the stochastic gradient descent  method, we run each row at a time and adjust the weights each time. This helps us avoid the problem of local minimums as the fluctuations are larger as we're running the method per line each time. This method is faster as it is a lighter algorithm as we do not load all the data at once into the memory and then run the data. The advantage of batch gradient descent is that it is a deterministic algorithm rather than a random alorithm. 
+In batch gradient descent we adjust the weights after we have run all the rows in our neural network. In the stochastic gradient descent  method, we run each row at a time and adjust the weights each time. This helps us avoid the problem of local minimums as the fluctuations are larger as we're running the method per line each time. This method is faster as it is a lighter algorithm as we do not load all the data at once into the memory and then run the data. The advantage of batch gradient descent is that it is a deterministic algorithm rather than a random algorithm. 
 
 The mini batch gradient descent method is midway between the two, where random batches of rows are run.
 
 **Steps in training the ANN with Stochastic Gradient Descent**
 
 - **Step 1:** Randomly initialise the weights to small numbers that are close to 0 (but not 0).
-- **Step 2:** Input the first observation of your dataset in the input layer, each feature in one input node.
+- **Step 2:** Input the first observation of your dataset into the input layer, each feature into one input node.
 - **Step 3:** Forward-Propagation: From left to right, the neurons are activated in a way that the impact of each neuron's activation is limited by the weights. Propagate the activations until getting the predicted result y.
-- **Step 4:** Compare the predicted result to the actual result; measure the gereated error.
+- **Step 4:** Compare the predicted result to the actual result; measure the generated error.
 - **Step 5:** Back-Propagation: From right to left, the error is back-propagated. Update the weights according to how much they're responsible for the error. The learning rate decides by how much we update the weights. 
 - **Step 6:** Repeat steps 1 to 5 and update the weights after each observation, or repeat steps 1 to 5 but update the weights only after a batch of observations.
-- **Step 7:** When the whole training set passed through the ANN, that makes an epoch. We decide how many epochs to perform.
+- **Step 7:** When the whole training set has passed through the ANN, that makes an epoch. We decide how many epochs to perform.
 
-The code below shows the output of when the epochs are running. As the epochs run, we observe the accuracy increasing and loss decreasing.
+In the below code, we have selected 10 observations per epoch and this to be repeated 100 times (epochs = 100).
+
+```
+classifier.fit(X_train, y_train, batch_size = 10, epochs = 100)
+```
+
+The code below shows the output as the epochs are running. As the epochs run, we observe the accuracy increasing and loss decreasing.
 
 ```
 Epoch 1/100
