@@ -69,3 +69,7 @@ Epoch 100/100
 Neuron diagram:  https://askabiologist.asu.edu/neuron-anatomy
 
 ANN digram: https://www.udemy.com/course/machinelearning/
+
+Online latex editor: https://www.codecogs.com/latex/eqneditor.php
+
+Online graph plotter: https://rechneronline.de/function-graphs/
