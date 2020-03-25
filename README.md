@@ -8,11 +8,11 @@ We will be using an "Artificial Neural Network" to complete this business task.
 
 ## Artificial Neural Networks
 
-An Artificial Neural Network (ANN) is a "Deep Learning" model that can be used for regression and classification. We create an artificial structure where we have nodes that represent neurons; the is illustrated by the image below.
+An Artificial Neural Network (ANN) is a "Deep Learning" model that can be used for regression and classification. The image below shows a neuron with its fundamental parts labelled.
 
 <img src = 'Screen1.png' width='700'>
 
-Neurons by themselves are not of much use but when you have many neurons together, they work together to produce magic. The digram below shows an ANN with one hidden layer.
+We create an artificial structure where we have nodes that represent neurons; this is illustrated by the image below. Neurons by themselves are not of much use but when you have many neurons together, they work together to produce magic. The diagram below shows an ANN with one hidden layer.
 
 <img src = 'Screen2.png' width='700'>
 
@@ -35,7 +35,7 @@ An advanced algorithm which allows us to adjust all the weights at the same time
 
 **Stochastic Gradient Descent**
 
-In batch gradient descent we adjust the weights after we have run all the rows in our neural network. In the stochastic gradient descent  method, we run each row at a time and adjust the weights each time. This helps us avoid the problem of local minimums as the fluctuations are larger as we're running the method per line each time. This method is faster as it is a lighter algorithm as we do not load all the data at once into the memory and then run the data. The advantage of batch gradient descent is that it is a deterministic algorithm rather than a random algorithm. 
+In batch gradient descent we adjust the weights after we have run all the rows of the data in our neural network. In the stochastic gradient descent  method, we run each row independently and adjust the weights each time. This helps us avoid the problem of local minimums as the fluctuations are larger as we're running the method per line each time. This method is faster as it is a lighter algorithm as we do not load all the data at once into the memory and then run the data. The advantage of batch gradient descent is that it is a deterministic algorithm rather than a random algorithm. 
 
 The mini batch gradient descent method is midway between the two, where random batches of rows are run.
 
